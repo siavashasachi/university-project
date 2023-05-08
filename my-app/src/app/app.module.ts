@@ -6,6 +6,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './header/navigation/navigation.component';
 import { ContentComponent } from './content/content.component';
 import { SliderComponent } from './content/slider/slider.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,7 @@ import { SliderComponent } from './content/slider/slider.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    NgImageSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

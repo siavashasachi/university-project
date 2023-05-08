@@ -7,5 +7,5 @@ import{ images} from '../../slider-images';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent {
-  images=images;
+images=images;
 }
