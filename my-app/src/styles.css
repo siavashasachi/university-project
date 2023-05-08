@@ -5,7 +5,7 @@
     --second-color: #2a40e8;
     --third-color: #2ab7e8;
     --forth-color: #3b90ff;
-    --nav-color: rgba(42, 64, 232, 0.782);
+    --nav-color: rgba(42, 64, 232, 0.399);
     --a-color:#ffffff7c;
     --a-white-hover:#fff;
     /* main colors */
@@ -22,6 +22,7 @@
   }
   body{
       font-family: 'iran-sans';
+      background-color: var(--main-color);
   }
   a{
     text-decoration: none;
