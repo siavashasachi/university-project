@@ -1,0 +1,9 @@
+/*colors*/
+:host{
+    /* main colors */
+    --main-color:#572EFF;
+    --nav-color:#2A41E8;
+    --third-color:#2AB7E8;
+    --footer-color:#3B90FF;
+        /* main colors */
+}
