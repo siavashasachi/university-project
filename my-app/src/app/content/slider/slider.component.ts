@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import{ images} from '../../slider-images';
 
 @Component({
   selector: 'app-slider',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent {
-
+  images=images;
 }
