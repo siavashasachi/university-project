@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    /* main colors */
+    --main-color: #572eff;
+    --second-color: #2a40e8;
+    --third-color: #2ab7e8;
+    --forth-color: #3b90ff;
+    --nav-color: rgba(42, 64, 232, 0.782);
+    --a-color:#ffffff7c;
+    --a-white-hover:#fff;
+    /* main colors */
+  }
+  /* font */
+  @font-face{
+      font-family: iran-sans;
+  src: url(./assets/fonts/ttf/IRANSansWeb.ttf);}
+  /* root */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  body{
+      font-family: 'iran-sans';
+  }
+  a{
+    text-decoration: none;
+  }
+  li{
+    list-style: none;
+  }
+  

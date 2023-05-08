@@ -1,0 +1,37 @@
+/* hover styles are in the end of code */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--nav-color);
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+}
+.nav-left{
+    display: flex;
+    padding-left: 2rem;
+}
+.nav-logo {
+  width: 77px;
+  height: 59px;
+}
+a {
+  color: var(--a-color);
+}
+.nav-right {
+  display: flex;
+  direction: rtl;
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+.nav-item {
+  padding-right: 0.8rem;
+}
+a:hover {
+  color: var(--a-white-hover);
+}
