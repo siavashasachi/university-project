@@ -1,0 +1,33 @@
+section {
+  padding: 3rem;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.plan {
+  display: flex;
+  justify-content: space-around;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-img {
+  width: 4rem;
+  height: 4rem;
+}
+.logo-num {
+    color: var(--white-color);
+  text-align: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: var(--forth-color);
+  border-radius: 50%;
+  padding: 0.8rem;
+}
