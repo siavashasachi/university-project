@@ -29,7 +29,7 @@ a {
   justify-content: space-around;
   font-size: 1.2rem;
 }
-.nav-item {
+.nav-item-non-b {
   padding-right: 0.8rem;
 }
 a:hover {
