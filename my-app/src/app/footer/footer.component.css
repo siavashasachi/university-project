@@ -1,0 +1,12 @@
+footer{
+    background-color: var(--forth-color);
+    padding: 0 2rem;
+}
+.container-footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.producer{
+    text-align: left;
+    opacity: 30%;
+}
