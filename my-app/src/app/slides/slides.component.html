@@ -1,4 +1,19 @@
-<div #container [ngStyle]="{width: 1200+'px',height:450+'px'}" style=" text-align:center;margin:auto; padding:0;">
-  <ng-image-slider #nav [images]="imageObject" [infinite]="false"  [autoSlide]="1"
-    [animationSpeed]="0.1" [imageSize]="{width: container.style.width, space:0 ,height:container.style.height}" slideImage="1"></ng-image-slider>
+<div
+  #container
+  [ngStyle]="{ width: 100 + '%', height: 70 + '%' }"
+  style="text-align: center; margin: auto; padding: 0"
+>
+  <ng-image-slider
+    #nav
+    [images]="imageObject"
+    [infinite]="false"
+    [autoSlide]="1"
+    [animationSpeed]="0.1"
+    [imageSize]="{
+      width: container.style.width,
+      space: 0,
+      height: container.style.height
+    }"
+    slideImage="1"
+  ></ng-image-slider>
 </div>
