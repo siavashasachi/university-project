@@ -1,0 +1,41 @@
+.container-sec2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: var(--third-color);
+  padding: 2rem;
+}
+.card-left {
+  display: flex;
+}
+.img-card {
+  width: 90%;
+  height: 80%;
+  align-self: end;
+}
+.card-right {
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: space-around;
+}
+.card-right p {
+  text-align: center;
+  display: inline-block;
+  font-size: 2.5rem;
+  opacity: 50%;
+}
+.btn {
+  display: inline-block;
+  width: 130px;
+  height: 51px;
+  background-color: var(--btn-color);
+  font-size: 30px;
+  filter: drop-shadow(5px 10px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 5%;
+  text-align: center;
+  color: var(--white-color);
+  align-self: end;
+}
+.btn:hover {
+  opacity: 90%;
+}

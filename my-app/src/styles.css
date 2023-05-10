@@ -1,37 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-    /* main colors */
-    --main-color: #572eff;
-    --second-color: #2a40e8;
-    --third-color: #2ab7e8;
-    --forth-color: #3b90ff;
-    --nav-color: rgba(42, 64, 232, 0.399);
-    --a-color:#ffffff7c;
-    --a-white-hover:#fff;
-    --white-color:#fff;
-    /* main colors */
-  }
-  /* font */
-  @font-face{
-      font-family: iran-sans;
-  src: url(./assets/fonts/ttf/IRANSansWeb.ttf);}
-  /* root */
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-  }
-  body{
-      font-family: 'iran-sans';
-      background-color: var(--main-color);
-  }
-  a{
-    text-decoration: none;
-  }
-  li{
-    list-style: none;
-  }
-  .slick-slider {  
-    width: 90%;  
-    margin: auto;  
-  }
+  /* main colors */
+  --main-color: #572eff;
+  --second-color: #2a40e8;
+  --third-color: #2ab7e8;
+  --forth-color: #3b90ff;
+  --btn-color:#2EFFF2;
+  --nav-color: rgba(42, 64, 232, 0.399);
+  --a-color: #ffffff7c;
+  --a-white-hover: #fff;
+  --white-color: #fff;
+  /* main colors */
+}
+/* font */
+@font-face {
+  font-family: iran-sans;
+  src: url(./assets/fonts/ttf/IRANSansWeb.ttf);
+}
+/* root */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "iran-sans";
+  background-color: var(--main-color);
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.slick-slider {
+  width: 90%;
+  margin: auto;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0;
+}
+p{
+  direction: rtl;
+  color: var(--white-color);
+}

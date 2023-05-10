@@ -1,10 +1,7 @@
 section {
   padding: 3rem;
 }
-.container {
-  max-width: 1200px;
-  margin: auto;
-}
+
 .plan {
   display: flex;
   justify-content: space-around;
