@@ -10,6 +10,7 @@ import { SlidesComponent } from './slides/slides.component';
 import { Section1Component } from './section1/section1.component';
 import { Section2Component } from './section2/section2.component';
 import { Section3Component } from './section3/section3.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { Section3Component } from './section3/section3.component';
     Section1Component,
     Section2Component,
     Section3Component,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
