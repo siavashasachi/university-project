@@ -1,12 +1,12 @@
 /* hover styles are in the end of code */
 nav {
-  display: flex;
+  display:flex;
   justify-content: space-between;
   background-color: var(--nav-color);
-  position: absolute;
   width: 100%;
   left: 0px;
   top: 0px;
+  z-index: 1;
 }
 .nav-left{
     display: flex;
