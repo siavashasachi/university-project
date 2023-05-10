@@ -42,7 +42,7 @@ li {
   margin: auto;
   padding: 0;
 }
-p{
+p,h1,h2,h3,h5,h4{
   direction: rtl;
   color: var(--white-color);
 }

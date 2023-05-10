@@ -1,0 +1,26 @@
+.container-sec{
+    padding: 2rem;
+}
+h2{
+    font-size: 2rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.card{
+    padding: 15%;
+    text-align: right;
+    background-color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 5px 10px var(--forth-color);
+}
+.card-h{
+    font-size: 170%;
+}
+.card-p{
+    font-size: 90%;
+}
