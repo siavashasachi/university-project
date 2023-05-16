@@ -19,7 +19,7 @@
   justify-content: space-around;
   text-justify: distribute }
 .card-right p {
-  text-align: center;
+  text-align: right;
   display: inline-block;
   font-size: 2.5rem;
   opacity: 50%;
@@ -50,5 +50,11 @@ display: none;
   }
   .btn{
     width: 200px;
+  }
+  .card-right p {
+    text-align: right;
+    display: inline-block;
+    font-size: 1.5rem;
+    opacity: 50%;
   }
 }
