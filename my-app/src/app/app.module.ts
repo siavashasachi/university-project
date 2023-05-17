@@ -15,6 +15,7 @@ import { NgToastModule } from 'ng-angular-popup';
 import { ModalComponent } from './_components/modal.component';
 import { SuccessHelpComponent } from './success-help/success-help.component';
 import { RouterModule } from '@angular/router';
+import { HomepageComponent } from './homepage/homepage.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     ModalComponent,
     SuccessHelpComponent,
+    HomepageComponent,
   ],
   imports: [
     RouterModule,

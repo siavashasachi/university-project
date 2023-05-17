@@ -1,12 +1,19 @@
 footer{
-    background-color: var(--forth-color);
-    padding: 0 2rem;
+    margin-top:12rem;
 }
-.container-footer{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+.footer {
+  background-color: var(--forth-color);
+  padding: 0 2rem;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  position:fixed;
 }
-.producer{
-    text-align: left;
-    opacity: 30%;
+.container-footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.producer {
+  text-align: left;
+  opacity: 30%;
 }
