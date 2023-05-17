@@ -8,6 +8,7 @@ import * as AOS from 'aos';
 export class AppComponent implements OnInit {
   title = 'دوچرخه-اصفهان';
   ngOnInit() {
-    AOS.init();
+    AOS.init({disable: 'mobile'});//AOS - 2
+    AOS.refresh();//refresh method is called on window resize and so on, as it doesn't require to build new store with AOS elements and should be as light as possible.
   }
 }
