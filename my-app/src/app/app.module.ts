@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { ModalComponent } from './_components/modal.component';
 import { SuccessHelpComponent } from './success-help/success-help.component';
+import { RouterModule } from '@angular/router';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,9 +26,10 @@ import { SuccessHelpComponent } from './success-help/success-help.component';
     Section3Component,
     FooterComponent,
     ModalComponent,
-    SuccessHelpComponent
+    SuccessHelpComponent,
   ],
   imports: [
+    RouterModule,
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,

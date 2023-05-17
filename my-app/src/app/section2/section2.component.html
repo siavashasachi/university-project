@@ -18,9 +18,18 @@
     </div>
     <jw-modal id="modal-1">
       <div class="btn-group">
-        <button class="btn-popup btn-danger"  (click)="modalService.close()">بستن</button>
-        <button class="btn-popup btn-success"  (click)="modalService.submit()">ثبت </button>
-     </div>
+        <button class="btn-popup btn-danger" (click)="modalService.close()">
+          بستن
+        </button>
+        <button
+          class="btn-popup btn-success"
+          routerLink="/submit-help"
+          routerLinkActive="active"
+          (click)="modalService.close()"
+          >ثبت
+        </button>
+      </div>
     </jw-modal>
   </div>
 </section>
+<router-outlet></router-outlet>
