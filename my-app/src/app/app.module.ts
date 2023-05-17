@@ -11,7 +11,8 @@ import { Section1Component } from './section1/section1.component';
 import { Section2Component } from './section2/section2.component';
 import { Section3Component } from './section3/section3.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { NgToastModule } from 'ng-angular-popup';
+import { ModalComponent } from './_components/modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,13 +23,14 @@ import { FooterComponent } from './footer/footer.component';
     Section2Component,
     Section3Component,
     FooterComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
     NgImageSliderModule,
-    
+    NgToastModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,13 +1,25 @@
 <section>
   <div class="container-non-b container-sec2">
-  
-    <div class="card-left"><img class="img-card" src="../../assets/images/card-images/support-bycicle.png" alt=""></div>
+    <div class="card-left">
+      <img
+        class="img-card"
+        src="../../assets/images/card-images/support-bycicle.png"
+        alt=""
+      />
+    </div>
     <div class="card-right">
-        <p>
-          با اهدا کردن دوچرخه از ما شارژ اصفهان کارت و دریافت نهال برای درخت کاری
-          دریافت کنید و به ترویج دوچرخه سواری کمک کنید
-        </p>
-        <a class="btn" href="#"> همبستگی</a>
-      </div>
+      <p>
+        با اهدا کردن دوچرخه از ما شارژ اصفهان کارت و دریافت نهال برای درخت کاری
+        دریافت کنید و به ترویج دوچرخه سواری کمک کنید
+      </p>
+      <button (click)="modalService.open('modal-1')" class="btn">
+        همبستگی
+      </button>
+    </div>
+    <jw-modal id="modal-1">
+      <h1>A custom modal popup</h1>
+      <p>Home page text: <input type="text" />{{ bodyText }}</p>
+      <button (click)="modalService.close()">Close</button>
+    </jw-modal>
   </div>
 </section>
