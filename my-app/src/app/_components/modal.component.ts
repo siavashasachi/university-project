@@ -5,7 +5,7 @@ import { ModalService } from '../_services/modal.service';
 @Component({
     selector: 'jw-modal',
     templateUrl: 'modal.component.html',
-    styleUrls: ['modal.component.less'],
+    styleUrls: ['modal.component.css'],
     encapsulation: ViewEncapsulation.None
 })
 export class ModalComponent implements OnInit, OnDestroy {

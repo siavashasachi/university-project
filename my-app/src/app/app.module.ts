@@ -13,6 +13,7 @@ import { Section3Component } from './section3/section3.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { ModalComponent } from './_components/modal.component';
+import { SuccessHelpComponent } from './success-help/success-help.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +24,8 @@ import { ModalComponent } from './_components/modal.component';
     Section2Component,
     Section3Component,
     FooterComponent,
-    ModalComponent
+    ModalComponent,
+    SuccessHelpComponent
   ],
   imports: [
     BrowserModule,

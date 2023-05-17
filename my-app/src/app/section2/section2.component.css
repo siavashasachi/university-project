@@ -17,7 +17,8 @@
   flex-direction: column;
   grid-template-rows: repeat(2, 1fr);
   justify-content: space-around;
-  text-justify: distribute }
+  text-justify: distribute;
+}
 .card-right p {
   text-align: right;
   display: inline-block;
@@ -35,10 +36,37 @@
   text-align: center;
   color: var(--white-color);
   align-self: end;
+  border: none;
+  opacity: 0.6;
+  transition: 0.3s;
 }
 .btn:hover {
-  opacity: 90%;
+  opacity: 1;
 }
+.btn-popup {
+  border: none;
+  padding: 1.1rem;
+  color: white;
+  bottom: 0;
+  opacity: 0.6;
+  transition: 0.3s;
+  font-size: 1.5rem;
+}
+.btn-popup:hover{
+opacity: 1;
+}
+.btn-danger{
+  background-color: var(--danger-btn);
+}
+.btn-success{
+background-color: var(--btn-success);
+}
+.btn-group{
+  width: 100%;
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap:10px;
+padding: 0 1.5rem;}
 @media only screen and (max-width: 700px) {
   .container-sec2 {
     display: grid;
@@ -46,9 +74,9 @@
     padding: 2rem;
   }
   .img-card {
-display: none;
+    display: none;
   }
-  .btn{
+  .btn {
     width: 200px;
   }
   .card-right p {
@@ -57,4 +85,9 @@ display: none;
     font-size: 1.5rem;
     opacity: 50%;
   }
+
+  .btn-group{
+    grid-template-columns: repeat(1,1fr);
+  }
+
 }

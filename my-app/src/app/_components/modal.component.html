@@ -1,5 +1,19 @@
 <div class="jw-modal">
-    <div class="jw-modal-body">
-        <ng-content></ng-content>
+  <div class="jw-modal-body">
+    <div class="form">
+      <p style="color: black">جهت اهدای دوچرخه فرم زیر را پر کنید</p>
+      <form
+        action=""
+      >
+        <label for="name">نام</label>
+        <input type="text" name="name" id="name" />
+        <label for="lastName">نام خانوادگی</label>
+        <input type="text" name="lastName" id="lastName" />
+        <label for="phoneNumber">شماره تلفن</label>
+        <input type="text" name="phoneNumber" id="phoneNumber" />
+        <!-- buttons' styles in section2.css -->
+      </form>
     </div>
+    <ng-content> </ng-content>
+  </div>
 </div>

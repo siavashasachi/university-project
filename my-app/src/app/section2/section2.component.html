@@ -17,9 +17,10 @@
       </button>
     </div>
     <jw-modal id="modal-1">
-      <h1>A custom modal popup</h1>
-      <p>Home page text: <input type="text" />{{ bodyText }}</p>
-      <button (click)="modalService.close()">Close</button>
+      <div class="btn-group">
+        <button class="btn-popup btn-danger"  (click)="modalService.close()">بستن</button>
+        <button class="btn-popup btn-success"  (click)="modalService.submit()">ثبت </button>
+     </div>
     </jw-modal>
   </div>
 </section>
