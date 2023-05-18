@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -16,6 +17,11 @@ import { ModalComponent } from './_components/modal.component';
 import { SuccessHelpComponent } from './success-help/success-help.component';
 import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatCardModule } from '@angular/material/card';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatSliderModule } from '@angular/material/slider';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,12 +37,17 @@ import { HomepageComponent } from './homepage/homepage.component';
     HomepageComponent,
   ],
   imports: [
+    BrowserAnimationsModule,
+    MatProgressSpinnerModule,
     RouterModule,
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
     NgImageSliderModule,
     NgToastModule,
+    MatCardModule,
+    MatRadioModule,
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
