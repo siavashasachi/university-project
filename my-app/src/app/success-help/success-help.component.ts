@@ -1,13 +1,20 @@
 import { Component } from '@angular/core';
-import {ThemePalette} from '@angular/material/core';
-import {ProgressSpinnerMode} from '@angular/material/progress-spinner';
 @Component({
   selector: 'app-success-help',
   templateUrl: './success-help.component.html',
-  styleUrls: ['./success-help.component.css']
+  styleUrls: ['./success-help.component.css'],
 })
 export class SuccessHelpComponent {
-  color: ThemePalette = 'primary';
-  mode: ProgressSpinnerMode = 'determinate';
-  value = 50;
+ progress:string='درحال اجرا';
+ sendToSuporter:string='درحال ارسال اطلاعات به پشتیبانی';
+
+ constructor(){
+
+ }
+cansel(){
+process.exit()}//it causes to doesn't send information to server
+// showSucess(): any = setTimeout(() => {
+//   this.progress='ّبا موفقیت انجام شد';
+//   this.sendToSuporter="جهت اطلاعات تکمیلی با شما تماس گرفته خواهد شد";
+// }, 5000);
 }

@@ -1,1 +1,19 @@
-<mat-spinner></mat-spinner>
+<div class="container">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{ progress }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        {{ sendToSuporter }}
+      </p>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="btn" (click)="cansel()"  routerLink="/home" mat-button>لغو</button>
+    </mat-card-actions>
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+</div>

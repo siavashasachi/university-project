@@ -14,13 +14,16 @@ import { Section3Component } from './section3/section3.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { ModalComponent } from './_components/modal.component';
-import { SuccessHelpComponent } from './success-help/success-help.component';
+import {SuccessHelpComponent} from './success-help/success-help.component';
 import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatSliderModule } from '@angular/material/slider';
+import { MatButtonModule } from '@angular/material/button';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,9 @@ import { MatSliderModule } from '@angular/material/slider';
     MatCardModule,
     MatRadioModule,
     MatSliderModule,
+    MatButtonModule,
+    MatProgressBarModule,
+    MatDividerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
