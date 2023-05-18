@@ -24,6 +24,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from '@angular/material/divider';
+import { OurServiceComponent } from './our-service/our-service.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MatDividerModule } from '@angular/material/divider';
     ModalComponent,
     SuccessHelpComponent,
     HomepageComponent,
+    OurServiceComponent,
   ],
   imports: [
     BrowserAnimationsModule,
