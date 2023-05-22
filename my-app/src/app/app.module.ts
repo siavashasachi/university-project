@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './header/navigation/navigation.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
@@ -26,6 +26,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from '@angular/material/divider';
 import { OurServiceComponent } from './our-service/our-service.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+import { NgHttpLoaderModule } from 'ng-http-loader';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -57,7 +59,7 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     MatSliderModule,
     MatButtonModule,
     MatProgressBarModule,
-    MatDividerModule,
+    MatDividerModule,HttpClientModule,NgHttpLoaderModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
