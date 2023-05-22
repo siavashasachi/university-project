@@ -16,6 +16,8 @@ h2{
     justify-content: space-between;
     box-shadow: 3px 5px 10px var(--forth-color);
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 .card-h{
     text-align: right;
