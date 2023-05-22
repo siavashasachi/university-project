@@ -14,7 +14,7 @@ import { Section3Component } from './section3/section3.component';
 import { FooterComponent } from './footer/footer.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { ModalComponent } from './_components/modal.component';
-import {SuccessHelpComponent} from './success-help/success-help.component';
+import { SuccessHelpComponent } from './success-help/success-help.component';
 import { RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -25,8 +25,10 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatDividerModule } from '@angular/material/divider';
 import { OurServiceComponent } from './our-service/our-service.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
     AppComponent,
     HeaderComponent,

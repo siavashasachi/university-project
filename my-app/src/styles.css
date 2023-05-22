@@ -48,3 +48,16 @@ p,h1,h2,h3,h5,h4{
   direction: rtl;
   color: var(--white-color);
 }
+.btn{
+  background-color: var(--third-color);
+  font-size: 1.2rem;
+  transition: 0.4s;
+  border: none;
+  padding: 0.3rem 0.7rem;
+  box-shadow: 1px 2px 5px var(--third-color);
+  border-radius: 0.5rem;
+  color: var(--a-color);
+}
+.btn:hover{
+  opacity: 0.6;
+}
