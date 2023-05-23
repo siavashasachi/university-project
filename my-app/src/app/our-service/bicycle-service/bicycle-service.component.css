@@ -1,15 +1,21 @@
-form{
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-  }
-  form input{
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+form input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  border: 4px solid #ccc;
+  transition: 0.5s;
+}
+ form input:focus {
+  border: 4px solid var(--input-focus);
+  background-color: rgb(240, 240, 240);
+}
