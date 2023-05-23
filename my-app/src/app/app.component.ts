@@ -10,6 +10,7 @@ import { ProgressBarMode } from '@angular/material/progress-bar';
 export class AppComponent implements OnInit {
   title = 'دوچرخه-اصفهان';
   mymode: ProgressBarMode = 'query';
+  loader: any;
   ngOnInit() {
     AOS.init({disable: 'mobile'});//AOS - 2
     AOS.refresh();//refresh method is called on window resize and so on, as it doesn't require to build new store with AOS elements and should be as light as possible.

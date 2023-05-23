@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import {AppComponent} from './app.component';
+import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './header/navigation/navigation.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
@@ -15,7 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { NgToastModule } from 'ng-angular-popup';
 import { ModalComponent } from './_components/modal.component';
 import { SuccessHelpComponent } from './success-help/success-help.component';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatCardModule } from '@angular/material/card';
@@ -27,7 +27,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { OurServiceComponent } from './our-service/our-service.component';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { NgHttpLoaderModule } from 'ng-http-loader';
+import { LoadingBarRouterModule } from '@ngx-loading-bar/router';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { LoadingBarModule } from '@ngx-loading-bar/core';
+import { LOADING_BAR_CONFIG } from '@ngx-loading-bar/core';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -48,7 +51,6 @@ import { NgHttpLoaderModule } from 'ng-http-loader';
   imports: [
     BrowserAnimationsModule,
     MatProgressSpinnerModule,
-    RouterModule,
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
@@ -59,9 +61,16 @@ import { NgHttpLoaderModule } from 'ng-http-loader';
     MatSliderModule,
     MatButtonModule,
     MatProgressBarModule,
-    MatDividerModule,HttpClientModule,NgHttpLoaderModule.forRoot()
+    MatDividerModule,
+    HttpClientModule,
+    RouterModule,
+    LoadingBarRouterModule,
+    LoadingBarHttpClientModule,
+    LoadingBarModule,
   ],
-  providers: [],
+  providers: [
+    { provide: LOADING_BAR_CONFIG, useValue: { latencyThreshold: 100 } },
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
