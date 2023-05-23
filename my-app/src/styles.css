@@ -13,6 +13,7 @@
   --danger-btn:rgb(206, 34, 34);
   --btn-success:rgb(0, 255, 34);
   --error-message:rgb(154, 0, 0);
+  --input-focus:#438bd2;
   /* main colors */
 }
 /* font */
@@ -29,6 +30,7 @@
 body {
   font-family: "iran-sans";
   background-color: var(--main-color);
+  color: var(--white-color);
 }
 a {
   text-decoration: none;
