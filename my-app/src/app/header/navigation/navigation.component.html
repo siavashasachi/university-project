@@ -1,4 +1,4 @@
-    <nav>
+    <nav >
         <div class="nav-left">
             <img style="align-self:flex-end; " class="nav-logo" src="../../../assets/images/logo/logo.png" alt="it's logo">
         </div>
@@ -11,3 +11,13 @@
            </ul>
         </div>
     </nav>
+    <ngx-loading-bar
+    [color]="mycolor"
+    [value]="myvalue"
+    height="3px"
+    [includeBar]="true"
+    [includeSpinner]="false"
+    ref="router"
+    [fixed]="false"
+    ></ngx-loading-bar>
+    <p class="error" [style]="ErrorDisplay">{{ErrorMessageNotFound}}</p>

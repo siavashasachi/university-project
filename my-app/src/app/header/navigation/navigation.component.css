@@ -32,6 +32,13 @@ a {
 .nav-item-non-b {
   padding-right: 0.8rem;
 }
+.error{
+  color: var( --error-message);
+  margin: auto;
+  display: none;
+  font-size: 3rem;
+  padding: 4rem;
+}
 a:hover {
   color: var(--a-white-hover);
 }
