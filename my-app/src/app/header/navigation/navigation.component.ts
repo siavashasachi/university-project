@@ -20,14 +20,17 @@ export class NavigationComponent  implements OnInit{
     }
     if (event instanceof NavigationEnd) {
       // We've finished navigating
-      this.myvalue=50;
+      this.myvalue=30;
       this.mycolor='rgb(0, 255, 34)';//green
       setTimeout(() => {
+        this.myvalue=60;
+      }, 300);
+      setTimeout(() => {
         this.myvalue=100;
-      }, 1500);
+      }, 600);
       setTimeout(() => {
         this.myvalue=0;
-      }, 2000);
+      }, 1000);
     }
     if (event instanceof NavigationError) {
       // something went wrong, log the error
