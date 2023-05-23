@@ -11,7 +11,7 @@
         ><img [src]="service.src" [alt]="service.alt"
       /></mat-card-image>
       <mat-card-actions
-        ><button class="btn">جزئیات بیشتر</button></mat-card-actions
+        ><button [routerLink]="service.route" class="btn">جزئیات بیشتر</button></mat-card-actions
       >
     </mat-card>
     
