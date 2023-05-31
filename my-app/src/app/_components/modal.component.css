@@ -32,14 +32,17 @@ justify-content: space-around;
   flex-direction: column;
   padding: 0.5rem;
 }
-.form input{
+input{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 2px;
   box-sizing: border-box;
+  transition: 0.6s;
+  outline: none;
+
 }
 
 
@@ -47,4 +50,8 @@ justify-content: space-around;
 body.jw-modal-open {
   /* body overflow is hidden to hide main scrollbar when modal window is open */
   overflow: hidden;
+}
+ input:focus{
+  border: 1px solid var(--input-focus);
+  border-radius: 4px;
 }
