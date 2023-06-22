@@ -1,1 +1,27 @@
-<p>place-service works!</p>
+<div class="container-non-b">
+    <form  action="">
+      <label for="">نام</label>
+      <input  type="text" />
+      <label for="">نام خانوادگی</label>
+      <input type="text" />
+      <label for="">شماره تلفن</label>
+      <input [(ngModel)]="phoneNumber"   type="number" name="" id="" />
+      {{phoneNumber}}
+      <p [style]="ErrorControlerN">{{ErrorNumber}}</p>
+      <label for="">کد ملی</label>
+      <input (input)="isValid($event)"  type="number" name="" id="" />
+      <p [style]="ErrorControler">{{ErrorMessage}}</p>
+      <label for="">عکس کارت ملی</label>
+      <input type="file" name="" id="" />
+      <label for="">توضیحات درباره مهارت های خود</label>
+      <textarea name="" id="" cols="30" rows="10"></textarea>
+      <button
+        routerLink="/submit-help"
+        routerLinkActive="active"
+        class="btn"
+        type="submit"
+      >
+        ثبت اطلاعات
+      </button>
+    </form>
+  </div>
