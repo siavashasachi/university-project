@@ -9,10 +9,21 @@ footer{
   width: 100%;
 }
 .container-footer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display:flex;
+  justify-content: space-between;
 }
 .producer {
   text-align: left;
   opacity: 30%;
+}
+.socialmedia{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4rem;
+  text-align: center;
+}
+.col-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
