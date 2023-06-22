@@ -3,7 +3,7 @@ form {
   flex-direction: column;
   padding: 0.5rem;
 }
-form input {
+form input ,textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -15,10 +15,11 @@ form input {
   border: 4px solid #ccc;
   transition: 0.5s;
 }
- form input:focus {
+ form input:focus,textarea:focus{
   border: 4px solid var(--input-focus);
   background-color: rgb(240, 240, 240);
 }
+
 label{
   color: var(--white-color);
 }

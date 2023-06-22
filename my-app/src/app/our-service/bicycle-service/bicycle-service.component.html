@@ -5,12 +5,16 @@
     <label for="">نام خانوادگی</label>
     <input type="text" />
     <label for="">شماره تلفن</label>
-    <input type="number" name="" id="" />
+    <input [(ngModel)]="phoneNumber"   type="number" name="" id="" />
+    {{phoneNumber}}
+    <p [style]="ErrorControlerN">{{ErrorNumber}}</p>
     <label for="">کد ملی</label>
-    <input (input)="isValid($event)" type="number" name="" id="" />
+    <input (input)="isValid($event)"  type="number" name="" id="" />
     <p [style]="ErrorControler">{{ErrorMessage}}</p>
     <label for="">عکس کارت ملی</label>
     <input type="file" name="" id="" />
+    <label for="">توضیحات درباره مهارت های خود</label>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
     <button
       routerLink="/submit-help"
       routerLinkActive="active"

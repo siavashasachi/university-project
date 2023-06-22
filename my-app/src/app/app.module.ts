@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
-import { AbstractControl } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'
+import { AbstractControl } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -35,9 +36,6 @@ import { LOADING_BAR_CONFIG } from '@ngx-loading-bar/core';
 import { BicycleServiceComponent } from './our-service/bicycle-service/bicycle-service.component';
 import { RentServiceComponent } from './our-service/rent-service/rent-service.component';
 import { PlaceServiceComponent } from './our-service/place-service/place-service.component';
-import { FormsModule } from '@angular/forms';
-import { ReactiveFormsModule } from '@angular/forms';
-
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [
@@ -58,10 +56,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     PlaceServiceComponent,
   ],
   imports: [
+
+    BrowserModule, 
     FormsModule,
     BrowserAnimationsModule,
     MatProgressSpinnerModule,
-    BrowserModule,
     AppRoutingModule,
     SlickCarouselModule,
     NgImageSliderModule,
@@ -77,8 +76,6 @@ import { ReactiveFormsModule } from '@angular/forms';
     LoadingBarRouterModule,
     LoadingBarHttpClientModule,
     LoadingBarModule,
-    ReactiveFormsModule,
-
   ],
   providers: [
     { provide: LOADING_BAR_CONFIG, useValue: { latencyThreshold: 100 } },
